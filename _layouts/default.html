@@ -43,8 +43,8 @@
               <p>I am a senior undergraduate student, currently pursuing a Bachelor in Computer Science at the <a href="https://www.cs.umn.edu/">Department of Computer Science and Engineering, University of Minnesota</a>.
               </p>
               <p>
-                During my time at UMN, I've been a part of <a href="http://mars.cs.umn.edu/">Multiple Autonomous Robotic Systems (MARS) Laboratory</a> where I'm a research assistant under the supervision of Prof. <a href="https://www-users.cs.umn.edu/~stergios/index.html" target="_blank">Stergios Roumeliotis</a> (supported by <a href="https://www.nsf.gov/div/index.jsp?div=IIS"> NSF-IIS</a>).
-                I also had the honor of working with Prof. <a href="https://www-users.cs.umn.edu/~hspark/">Hyun Soo Park</a> and Prof. <a href="https://lanayarosh.com/">Lana Yarosh</a> on various computer vision and human-computer interaction research projects.
+                During my time at UMN, I've been a part of <a href="http://mars.cs.umn.edu/" target="_blank">Multiple Autonomous Robotic Systems (MARS) Laboratory</a> where I'm a research assistant under the supervision of Prof. <a href="https://www-users.cs.umn.edu/~stergios/index.html" target="_blank">Stergios Roumeliotis</a> (supported by <a href="https://www.nsf.gov/div/index.jsp?div=IIS" target="_blank"> NSF-IIS</a>).
+                I also had the honor of working with Prof. <a href="https://www-users.cs.umn.edu/~hspark/" target="_blank">Hyun Soo Park</a> and Prof. <a href="https://lanayarosh.com/" target="_blank">Lana Yarosh</a> on various computer vision and human-computer interaction research projects.
                 Last year, I spent an amazing summer at <a href="https://www.enfusionsystems.com/" target="_blank">Enfusion Systems</a> as a software engineering intern.
               </p>
               <p>
@@ -71,8 +71,8 @@
               <i class="far fa-newspaper"></i>&nbsp;&nbsp;News
             </heading>
             <ul style="line-height: 150%">
-              <li><strong>[Jul. 2020]</strong> </b> Our paper <em>Surface Normal Estimation of Tilted Images via Spatial Rectifier</em> is accepted to <a href="https://eccv2020.eu/">ECCV 2020</a> as a <b>spotlight presentation</b>.</li>
-              <li><strong>[Jun. 2020]</strong> </b> Our paper <em>Deep Depth Estimation from Visual-Inertial SLAM</em> is accepted to <a href="https://www.iros2020.org/">IROS 2020</a>.</li>
+              <li><strong>[Jul. 2020]</strong> </b> Our paper <em>Surface Normal Estimation of Tilted Images via Spatial Rectifier</em> is accepted to <a href="https://eccv2020.eu/" target="_blank">ECCV 2020</a> as a <b>spotlight presentation</b>.</li>
+              <li><strong>[Jun. 2020]</strong> </b> Our paper <em>Deep Depth Estimation from Visual-Inertial SLAM</em> is accepted to <a href="https://www.iros2020.org/" target="_blank">IROS 2020</a>.</li>
             </ul>
           </td>
         </tr>
@@ -108,13 +108,13 @@
                   <b> {{ author }},&nbsp;</b>
                 {% elsif forloop.last == true %}
                   {% if post.authors_link[forloop.index0] != "" %}
-                    and <a href={{post.authors_link[forloop.index0]}}> {{ author }}</a>
+                    and <a href={{post.authors_link[forloop.index0]}} target="_blank"> {{ author }}</a>
                   {% else %}
                     and {{ author }}
                   {% endif %}
                 {% else %}
                   {% if post.authors_link[forloop.index0] != "" %}
-                    <a href={{post.authors_link[forloop.index0]}}> {{ author }},&nbsp</a>
+                    <a href={{post.authors_link[forloop.index0]}} target="_blank"> {{ author }},&nbsp</a>
                   {% else %}
                     {{ author }},&nbsp;
                   {% endif %}
@@ -128,19 +128,22 @@
               {% endif %}
               <br>
               {% if post.arxiv %}
-              <a href="{{post.arxiv}}">[arXiv]</a>
+              <a href="{{post.arxiv}}" target="_blank">[arXiv]</a>
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}" target="_blank">[website]</a>
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">[video]</a>
+              <a href="{{post.video}}" target="_blank">[video]</a>
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">[code]</a>
+              <a href="{{post.code}}" target="_blank">[code]</a>
               {% endif %}
               {% if post.poster %}
-              <a href="{{post.poster}}">[poster]</a>
+              <a href="{{post.poster}}" target="_blank">[poster]</a>
               {% endif %}
               {% if post.slides %}
-              <a href="{{post.slides}}">[slides]</a>
+              <a href="{{post.slides}}" target="_blank">[slides]</a>
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -217,7 +220,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:center;font-size:small;">
-                Template from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron</a>.
+                Template from <a style="font-size:small;" href="https://jonbarron.info" target="_blank">Jon Barron</a>.
               </p>
             </td>
           </tr>
