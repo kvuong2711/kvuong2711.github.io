@@ -2,7 +2,7 @@
 layout: post
 title:  "Deep Depth Estimation from Visual-Inertial SLAM"
 date:   2020-07-24 22:21:59 +00:00
-image: images/iros2020.png
+image: images/iros2020.gif
 categories: research
 author: "Khiem Vuong"
 authors: ["Kourosh Sartipi", "Tien Do", "Tong Ke", "Khiem Vuong", "Stergios I. Roumeliotis"]
