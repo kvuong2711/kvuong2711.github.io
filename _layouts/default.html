@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173597671-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173597671-1');
+  </script>
+  
+  <title>{{ site.name }}</title>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/academicons.min.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/0397495b66.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <!--Bio-->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:70%;vertical-align:middle">
+              <h1>
+                {{ site.name }}
+              </h1>
+              <p>I am a senior undergraduate student, currently pursuing a Bachelor in Computer Science at the <a href="https://www.cs.umn.edu/">Department of Computer Science and Engineering, University of Minnesota</a>.
+              </p>
+              <p>
+                During my time at UMN, I've been a part of <a href="http://mars.cs.umn.edu/" target="_blank">Multiple Autonomous Robotic Systems (MARS) Laboratory</a> where I'm a research assistant under the supervision of Prof. <a href="https://www-users.cs.umn.edu/~stergios/index.html" target="_blank">Stergios Roumeliotis</a>.
+                I also had the honor of working with Prof. <a href="https://www-users.cs.umn.edu/~hspark/" target="_blank">Hyun Soo Park</a> and Prof. <a href="https://lanayarosh.com/" target="_blank">Lana Yarosh</a> on various computer vision and human-computer interaction research projects.
+                I spent an amazing summer at <a href="https://www.enfusionsystems.com/" target="_blank">Enfusion Systems</a> as a software engineering intern during my sophomore year.
+              </p>
+              <p>
+                I'm interested in computer vision and machine learning. Most of my research is about visual scene understanding, i.e. inferring the physical world from images.
+              </p>
+              <p style="text-align: center;">
+                <a href="mailto:vuong067@umn.edu" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>&emsp;&emsp;&emsp;
+                <a href="cv.pdf" target="_blank"><i class="ai ai-cv-square ai-3x"></i></a>&emsp;&emsp;&emsp;
+                <a href="https://github.com/kvuong2711" target="_blank"><i class="fab fa-github fa-3x"></i></a>&emsp;&emsp;&emsp;
+                <a href="https://scholar.google.com/citations?hl=en&user=ow6ni6oAAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a>&emsp;&emsp;&emsp;
+                <a href="https://www.linkedin.com/in/kvuong2711/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:25%;max-width:25%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/circle_bw_crop.png">
+            </td>
+          </tr>
+        </table>
+        <!--News-->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <heading>
+              <i class="far fa-newspaper"></i>&nbsp;&nbsp;News
+            </heading>
+            <ul style="line-height: 150%">
+              <li><strong>[Jul. 2020]</strong> </b> Our paper <em>Surface Normal Estimation of Tilted Images via Spatial Rectifier</em> is accepted to <a href="https://eccv2020.eu/" target="_blank">ECCV 2020</a> as a <b>spotlight presentation</b>.</li>
+              <li><strong>[Jun. 2020]</strong> </b> Our paper <em>Deep Depth Estimation from Visual-Inertial SLAM</em> is accepted to <a href="https://www.iros2020.org/" target="_blank">IROS 2020</a>.</li>
+            </ul>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+
+        <!--Research-->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <heading>
+                <i class="far fa-file-alt"></i>&nbsp;&nbsp;Research/Publications
+              </heading>
+            </td>
+          </tr>
+        </table>
+
+        <!--Publications-->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
+              <img src="/{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <papertitle>{{post.title}}</papertitle>
+              <br>
+              {% for author in post.authors %}
+                {% if author == "Khiem Vuong" %}
+                  <b> {{ author }}, </b>
+                {% elsif forloop.last == true %}
+                  {% if post.authors_link[forloop.index0] != "" %}
+                    and <a href={{post.authors_link[forloop.index0]}} target="_blank"> {{ author }}</a>
+                  {% else %}
+                    and {{ author }}
+                  {% endif %}
+                {% else %}
+                  {% if post.authors_link[forloop.index0] != "" %}
+                    <a href={{post.authors_link[forloop.index0]}} target="_blank"> {{ author }}, </a>
+                  {% else %}
+                    {{ author }},
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+              <br>
+              {% if post.prize %}
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }} &emsp; <p style="color: red; font-weight: bold; display: inline"> ({{ post.prize }}) </p>
+              {% else %}
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              {% endif %}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}" target="_blank">[arXiv]</a>
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}" target="_blank">[website]</a>
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}" target="_blank">[video]</a>
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}" target="_blank">[code]</a>
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}" target="_blank">[poster]</a>
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}" target="_blank">[slides]</a>
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <!--Experience-->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td class="all" style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
+            <heading>
+              <i class="fas fa-briefcase"></i>&nbsp;&nbsp;Work Experience
+            </heading>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+
+        <!--Jobs-->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/marslab.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+
+            <td class="exp-description">
+              <b>Research Assistant</b>
+              <span style="float: right;">2019 - Present</span>
+              <br>
+              <a href="http://mars.cs.umn.edu/" target="_blank">Multiple Autonomous Robotic Systems (MARS) Laboratory</a>
+              <br>
+              Advisor: Prof. <a href="https://www-users.cs.umn.edu/~stergios/index.html" target="_blank">Stergios I. Roumeliotis</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/enfusion.jpeg" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+
+            <td class="exp-description">
+              <b>Software Engineering Intern</b>
+              <span style="float: right;">Summer 2019</span>
+              <br>
+              <a href="https://www.enfusionsystems.com/" target="_blank">Enfusion Systems</a>
+              <br>
+              Team: Backend services, Portfolio Management Systems (PMS)
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="images/grouplens.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+
+            <td class="exp-description">
+              <b>Research Assistant</b>
+              <span style="float: right;">2018 - 2019</span>
+              <br>
+              <a href="https://grouplens.org/" target="_blank">GroupLens Research</a>
+              <br>
+              Advisor: Prof. <a href="https://lanayarosh.com/" target="_blank">Lana Yarosh</a>
+            </td>
+          </tr>
+
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Template from <a style="font-size:small;" href="https://jonbarron.info" target="_blank">Jon Barron</a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
+

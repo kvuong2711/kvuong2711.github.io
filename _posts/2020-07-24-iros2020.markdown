@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Deep Depth Estimation from Visual-Inertial SLAM"
+date:   2020-07-24 22:21:59 +00:00
+image: images/iros2020.gif
+categories: research
+author: "Khiem Vuong"
+authors: ["Kourosh Sartipi", "Tien Do", "Tong Ke", "Khiem Vuong", "Stergios I. Roumeliotis"]
+authors_link: ["https://scholar.google.com/citations?user=WBZAFHAAAAAJ&hl=en", "", "https://scholar.google.com/citations?user=snbAqkwAAAAJ&hl=en" , "", "https://www-users.cs.umn.edu/~stergios/index.html"]
+venue: "IEEE/RSJ International Conference on Intelligent Robots and System (IROS)"
+code: https://github.com/MARSLab-UMN/vi_depth_completion
+arxiv: https://arxiv.org/abs/2008.00092
+---
+Dense depth estimation from sparse depth points (computed from a Visual-Inertial SLAM system) and RGB images of indoor scenes.

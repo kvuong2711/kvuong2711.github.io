@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Surface Normal Estimation of Tilted Images via Spatial Rectifier"
+date:   2020-07-25 22:21:59 +00:00
+image: images/surface_normal.gif
+categories: research
+author: "Khiem Vuong"
+authors: ["Tien Do", "Khiem Vuong", "Stergios I. Roumeliotis", "Hyun Soo Park"]
+authors_link: ["", "", "https://www-users.cs.umn.edu/~stergios/index.html", "https://www-users.cs.umn.edu/~hspark/"]
+venue: "European Conference on Computer Vision (ECCV)"
+arxiv: https://arxiv.org/abs/2007.09264
+prize: "Spotlight Presentation"
+code: https://github.com/MARSLab-UMN/TiltedImageSurfaceNormal
+video: https://youtu.be/3TswQYOK9N0
+website: https://www.khiemvuong.com/TiltedImageSurfaceNormal/
+---
+Surface normal estimation of tilted images by leveraging a spatial rectifier that is learned to transform the surface normal distribution of a tilted image to the rectified one that matches the gravity-aligned training data distribution. 
