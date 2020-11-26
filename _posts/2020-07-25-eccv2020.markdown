@@ -8,7 +8,7 @@ author: "Khiem Vuong"
 authors: ["Tien Do", "Khiem Vuong", "Stergios I. Roumeliotis", "Hyun Soo Park"]
 authors_link: ["", "", "https://www-users.cs.umn.edu/~stergios/index.html", "https://www-users.cs.umn.edu/~hspark/"]
 venue: "European Conference on Computer Vision (ECCV)"
-arxiv: https://arxiv.org/abs/2007.09264
+arxiv: https://arxiv.org/pdf/2007.09264.pdf
 prize: "Spotlight Presentation"
 code: https://github.com/MARSLab-UMN/TiltedImageSurfaceNormal
 video: https://youtu.be/3TswQYOK9N0
