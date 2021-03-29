@@ -10,6 +10,9 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-173597671-1');
+
+    var x = document.lastModified;
+
   </script>
   
   <title>{{ site.name }}</title>
@@ -234,7 +237,8 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:center;font-size:small;">
-                Template from <a style="font-size:small;" href="https://jonbarron.info" target="_blank">Jon Barron</a>.
+                Template from <a style="font-size:small;" href="https://jonbarron.info" target="_blank">Jon Barron</a>. 
+                Last modified: <script> curDate = new Date(); document.write(curDate.toLocaleString('default', { month: 'long' }) + " " + curDate.getDate() + ", " + curDate.getFullYear() + "."); </script>
               </p>
             </td>
           </tr>
