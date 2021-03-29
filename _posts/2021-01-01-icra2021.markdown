@@ -7,8 +7,8 @@ categories: research
 author: "Khiem Vuong"
 authors: ["Tong Ke", "Tien Do", "Khiem Vuong", "Kourosh Sartipi", "Stergios I. Roumeliotis"]
 authors_link: ["https://scholar.google.com/citations?user=snbAqkwAAAAJ&hl=en", "", "" , "https://scholar.google.com/citations?user=WBZAFHAAAAAJ&hl=en", "https://www-users.cs.umn.edu/~stergios/index.html"]
-venue: "Under review at IEEE International Conference on Robotics and Automation (ICRA)"
-arxiv: https://arxiv.org/pdf/2011.09594.pdf
+venue: "IEEE International Conference on Robotics and Automation (ICRA)"
+arxiv: http://mars.cs.umn.edu/papers/icra2021_submission.pdf
 code: https://github.com/MARSLab-UMN/DeepMultiviewDepth
 ---
 Estimating dense depth and its uncertainty from a sequence of images by leveraging a dense optical flow network to triangulate initial depth maps and refine them through an iterative refinement module.
