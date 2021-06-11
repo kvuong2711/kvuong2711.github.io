@@ -15,16 +15,16 @@
 
   </script>
   
-  <title>{{ site.name }}</title>
+  <title>Khiem Vuong</title>
 
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-  <meta name="author" content="{{ site.name }}" />
+  <meta name="author" content="Khiem Vuong" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/academicons.min.css">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/academicons.min.css">
+  <link rel="canonical" href="https://kvuong2711.github.io/research/2020/07/25/eccv2020.html">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:70%;vertical-align:middle">
               <h1>
-                {{ site.name }}
+                Khiem Vuong
               </h1>
               <!-- <p>
                 I'm joining <a href="https://www.ri.cmu.edu/" target="_blank">The Robotics Institute</a>, a divison of the <a href="https://www.scs.cmu.edu/" target="_blank">School of Computer Science (SCS)</a> at <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, in the upcoming Fall as a Master's student (MS in Robotics).
@@ -110,65 +110,188 @@
         <!--Publications-->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
+          
+          
+          
           <tr>
             <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
-              <img src="/{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="/images/icra2021.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <papertitle>{{post.title}}</papertitle>
+              <papertitle>Deep Multi-view Depth Estimation with Predicted Uncertainty</papertitle>
               <br>
-              {% for author in post.authors %}
-                {% if author == "Khiem Vuong" %}
-                  <b> {{ author }}, </b>
-                {% elsif forloop.last == true %}
-                  {% if post.authors_link[forloop.index0] != "" %}
-                    and <a href={{post.authors_link[forloop.index0]}} target="_blank"> {{ author }}</a>
-                  {% else %}
-                    and {{ author }}
-                  {% endif %}
-                {% else %}
-                  {% if post.authors_link[forloop.index0] != "" %}
-                    <a href={{post.authors_link[forloop.index0]}} target="_blank"> {{ author }}, </a>
-                  {% else %}
-                    {{ author }},
-                  {% endif %}
-                {% endif %}
-              {% endfor %}
+              
+                
+                  
+                    <a href=https://scholar.google.com/citations?user=snbAqkwAAAAJ&hl=en target="_blank"> Tong Ke, </a>
+                  
+                
+              
+                
+                  
+                    Tien Do,
+                  
+                
+              
+                
+                  <b> Khiem Vuong, </b>
+                
+              
+                
+                  
+                    <a href=https://scholar.google.com/citations?user=WBZAFHAAAAAJ&hl=en target="_blank"> Kourosh Sartipi, </a>
+                  
+                
+              
+                
+                  
+                    and <a href=https://www-users.cs.umn.edu/~stergios/index.html target="_blank"> Stergios I. Roumeliotis</a>
+                  
+                
+              
               <br>
-              {% if post.prize %}
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }} <p style="color: red; font-weight: bold; display: inline"> ({{ post.prize }}) </p>
-              {% else %}
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              {% endif %}
+              
+              <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2021
+              
               <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}" target="_blank">[pdf]</a>
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}" target="_blank">[website]</a>
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}" target="_blank">[video]</a>
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}" target="_blank">[code]</a>
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}" target="_blank">[poster]</a>
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}" target="_blank">[slides]</a>
-              {% endif %}
+              
+              <a href="http://mars.cs.umn.edu/papers/icra2021_submission.pdf" target="_blank">[pdf]</a>
+              
+              
+              
+              
+              <a href="https://github.com/MARSLab-UMN/DeepMultiviewDepth" target="_blank">[code]</a>
+              
+              
+              
               <p></p>
-              {{ post.excerpt }}
+              <p>Estimating dense depth and its uncertainty from a sequence of images by leveraging a dense optical flow network to triangulate initial depth maps and refine them through an iterative refinement module.</p>
+
             </td>
           </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+          
+          
+          
+          
+          
+          <tr>
+            <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
+              <img src="/images/surface_normal.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <papertitle>Surface Normal Estimation of Tilted Images via Spatial Rectifier</papertitle>
+              <br>
+              
+                
+                  
+                    Tien Do,
+                  
+                
+              
+                
+                  <b> Khiem Vuong, </b>
+                
+              
+                
+                  
+                    <a href=https://www-users.cs.umn.edu/~stergios/index.html target="_blank"> Stergios I. Roumeliotis, </a>
+                  
+                
+              
+                
+                  
+                    and <a href=https://www-users.cs.umn.edu/~hspark/ target="_blank"> Hyun Soo Park</a>
+                  
+                
+              
+              <br>
+              
+              <em>European Conference on Computer Vision (ECCV)</em>, 2020 <p style="color: red; font-weight: bold; display: inline"> (Spotlight Presentation) </p>
+              
+              <br>
+              
+              <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123490256.pdf" target="_blank">[pdf]</a>
+              
+              
+              <a href="https://www.khiemvuong.com/TiltedImageSurfaceNormal/" target="_blank">[website]</a>
+              
+              
+              <a href="https://youtu.be/3TswQYOK9N0" target="_blank">[video]</a>
+              
+              
+              <a href="https://github.com/MARSLab-UMN/TiltedImageSurfaceNormal" target="_blank">[code]</a>
+              
+              
+              
+              <p></p>
+              <p>Surface normal estimation of tilted images by leveraging a spatial rectifier that is learned to transform the surface normal distribution of a tilted image to the rectified one that matches the gravity-aligned training data distribution.</p>
+
+            </td>
+          </tr>
+          
+          
+          
+          
+          
+          <tr>
+            <td style="padding:2.5%;width:35%;vertical-align:middle;min-width:120px">
+              <img src="/images/iros2020.gif" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <papertitle>Deep Depth Estimation from Visual-Inertial SLAM</papertitle>
+              <br>
+              
+                
+                  
+                    <a href=https://scholar.google.com/citations?user=WBZAFHAAAAAJ&hl=en target="_blank"> Kourosh Sartipi, </a>
+                  
+                
+              
+                
+                  
+                    Tien Do,
+                  
+                
+              
+                
+                  
+                    <a href=https://scholar.google.com/citations?user=snbAqkwAAAAJ&hl=en target="_blank"> Tong Ke, </a>
+                  
+                
+              
+                
+                  <b> Khiem Vuong, </b>
+                
+              
+                
+                  
+                    and <a href=https://www-users.cs.umn.edu/~stergios/index.html target="_blank"> Stergios I. Roumeliotis</a>
+                  
+                
+              
+              <br>
+              
+              <em>IEEE/RSJ International Conference on Intelligent Robots and System (IROS)</em>, 2020
+              
+              <br>
+              
+              <a href="https://arxiv.org/pdf/2008.00092.pdf" target="_blank">[pdf]</a>
+              
+              
+              
+              
+              <a href="https://github.com/MARSLab-UMN/vi_depth_completion" target="_blank">[code]</a>
+              
+              
+              
+              <p></p>
+              <p>Dense depth estimation from sparse depth points (computed from a Visual-Inertial SLAM system) and RGB images of indoor scenes.</p>
+
+            </td>
+          </tr>
+          
+          
+          
         </table>
 
         <!--Experience-->
