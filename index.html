@@ -233,8 +233,16 @@
       </a>
     </td>
     <td class="pub_text">
-      <p><a href="https://khiemvuong.com" target="_blank">      
-      <heading>WALT3D: Generating Realistic Training Data from Time-Lapse Imagery for Reconstructing Dynamic Objects under Occlusion</heading></a><br>
+      <p><a href="https://khiemvuong.com" target="_blank">    
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-fire" viewBox="0 0 16 16">
+          <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+        </svg>  
+      <heading>WALT3D: Generating Realistic Training Data from Time-Lapse Imagery for Reconstructing Dynamic Objects under Occlusion </heading></a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-fire" viewBox="0 0 16 16">
+        <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+      </svg>
+      
+      <br>
 
 
       <u><strong>Khiem Vuong</strong></u>, 
@@ -242,23 +250,24 @@
       <a href=https://www.ri.cmu.edu/ri-people/robert-joseph-tamburo/ target="_blank"> Robert Tamburo</a>, 
       <a href=https://www.cs.cmu.edu/~srinivas/ target="_blank"> Srinivasa G. Narasimhan</a> <br>
       
-      <span style="color:darkred"><b>CVPR 2024 -- details coming soon!</b></span> <br>
+      <span style="color:darkred"><b>CVPR 2024</b> 
+      
+      </span> <br>
 
-        <!-- <a href="https://www.khiemvuong.com/OpenTrafficCam3D/" target="_blank">webpage</a> |
-        <a href="javascript:toggleblock('wacv24_abs')">abstract</a> |
-        <a href="https://arxiv.org/abs/2311.04243" target="_blank">pdf</a> |
-        <a href="https://github.com/kvuong2711/OpenTrafficCam3D" target="_blank">code</a> |
-        <a shape="rect" href="javascript:togglebib('wacv24')" class="togglebib">bibtex</a> 
+        <a href="https://www.cs.cmu.edu/~walt" target="_blank">webpage</a> |
+        <a href="javascript:toggleblock('cvpr24_abs')">abstract</a> |
+        <a href="https://www.cs.cmu.edu/~walt/walt3d/pdf/walt3d.pdf" target="_blank">pdf</a> |
+        <!-- <a href="https://github.com/kvuong2711/OpenTrafficCam3D" target="_blank">code</a> | -->
+        <a shape="rect" href="javascript:togglebib('cvpr24')" class="togglebib">bibtex</a> 
   
-        <p align="justify"> <i id="wacv24_abs">Despite the widespread deployment of outdoor cameras, their potential for automated analysis remains largely untapped due, in part, to calibration challenges. The absence of precise camera calibration data, including intrinsic and extrinsic parameters, hinders accurate real-world distance measurements from captured videos.
+        <p align="justify"> <i id="cvpr24_abs">Current methods for 2D and 3D object understanding struggle with severe occlusions in busy urban environments, partly due to the lack of large-scale labeled ground-truth annotations for learning occlusion. In this work, we introduce a novel framework for automatically generating a large, realistic dataset of dynamic objects under occlusions using freely available time-lapse imagery. By leveraging off-the-shelf 2D (bounding box, segmentation, keypoint) and 3D (pose, shape) predictions as pseudo-groundtruth, unoccluded 3D objects are identified automatically and composited into the background in a clip-art style, ensuring realistic appearances and physically accurate occlusion configurations. The resulting clip-art image with pseudo-groundtruth enables efficient training of object reconstruction methods that are robust to occlusions. Our method demonstrates significant improvements in both 2D and 3D reconstruction, particularly in scenarios with heavily occluded objects like vehicles and people in urban scenes.
 
-          To address this, we present a scalable framework that utilizes street-level imagery to reconstruct a metric 3D model, facilitating precise calibration of in-the-wild traffic cameras. Notably, our framework achieves 3D scene reconstruction and accurate localization of over 100 global traffic cameras, and is scalable to any camera with sufficient street-level imagery.
-          
-          For evaluation, we introduce a dataset of 20 fully calibrated traffic cameras, demonstrating our method's significant enhancements over existing automatic calibration techniques. Furthermore, we highlight our approach's utility in traffic analysis by extracting insights via 3D vehicle reconstruction and speed measurement, thereby opening up the potential of using outdoor cameras for automated analysis.</i></p>
+        </i></p>
         <script xml:space="preserve" language="JavaScript">
-          hideblock('wacv24_abs');
+          hideblock('cvpr24_abs');
         </script>
-        3D scene reconstruction and precise localization of over 100 real-world traffic cameras. -->
+        
+        Automatically generate realistic training data from time-lapse videos for reconstructing dynamics objects (people, vehicle) under occlusion.
 
       </p>
 
@@ -268,13 +277,13 @@
 
   <tr>
     <td colspan="2" style="padding: 0px">
-      <div class="paper" id="wacv24">
+      <div class="paper" id="cvpr24">
         <pre xml:space="preserve">
-          @inproceedings{vuong2024trafficcalib,
-            title = {Toward Planet-Wide Traffic Camera Calibration},
-            author = {Vuong, Khiem and Tamburo, Robert and Narasimhan, Srinivasa G.},
-            booktitle = {IEEE Winter Conference on Applications of Computer Vision},
-            year = {2024}}
+          @InProceedings{vuong2024walt3d,
+            author    = {Vuong, Khiem and Reddy, N. Dinesh and Tamburo, Robert and Narasimhan, Srinivasa G.},
+            title     = {WALT3D: Generating Realistic Training Data from Time-Lapse Imagery for Reconstructing Dynamic Objects under Occlusion},
+            booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+            year      = {2024},}
           </pre>
       </div>
     </td>
