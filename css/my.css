@@ -1,0 +1,81 @@
+@import "my_def.css";
+@import "my_navbar.css";
+/* @import "my_header.css"; */
+@import "my_btn.css";
+/* @import "my_box.css"; */
+
+
+.my-name::before {
+    content: "Khiem Vuong"
+}
+
+
+.course-name {
+    font-size: smaller;
+    font-style: italic;
+}
+
+.proj{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sections */
+.header {
+    text-align: center;
+}
+
+.section-first {
+    /* [disabled]height: 100%; */
+    /* text-align: center; */
+    padding-top: 30px;
+    /* min/max-height is essential to deal with uncommon window sizes */
+    /* [disabled]min-height: 500px; */
+    /* [disabled]max-height: 800px; */
+}
+
+.section-odd {
+    background: #fff;
+}
+
+.section-even {
+    background-color: #eee;
+}
+
+/* news section */
+.news-date {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Publications */
+.pub-title {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.pub-author {
+    font-size: medium;
+    /* font-weight: bold;  */   
+}
+
+.pub-author .my-name {
+    /* font-weight: bolder; */
+    text-decoration: underline;
+}
+
+.pub-desc {
+    font-size: medium;
+    line-height: normal;
+    text-align: justify;
+}
+
+.pub-cite {
+    /* font-size: small; */
+    line-height: normal;
+}
+
+.pub-cite .conf-name {
+    font-weight: bold;
+    font-style: italic;
+ }

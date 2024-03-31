@@ -1,0 +1,15 @@
+.btn-group-xs > .btn, .btn-xs {
+    padding: .25rem .4rem;
+    font-size: .875rem;
+    line-height: .5;
+    border-radius: .2rem;
+  }
+
+.btn {
+    /* border: 0; */
+    border-radius: 12px;
+    /* text-transform: uppercase; */
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+}
+
