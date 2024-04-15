@@ -51,10 +51,18 @@ function cylinderMesh(pointX, pointY, material) {
     // Initialize arrays to store parsed data
     const images = [];
 
-    // Loop through each line and parse data
-    for (const line of lines) {
+    // Skip the lines containing #
+    while (lines.length > 0 && lines[0].startsWith('#')) {
+        lines.shift();
+    }
+
+    // Loop through lines but every 2 lines
+    for (let i = 0; i < lines.length; i += 2) {
+        const line = lines[i];
         const parts = line.trim().split(/\s+/);
         const type = parts.shift(); // Extract the first part as the type
+
+        console.log(parts);
 
         switch (type) {
             case 'IMAGE_ID':
@@ -106,6 +114,9 @@ function cylinderMesh(pointX, pointY, material) {
                 break;
         }
     }
+
+    //
+    console.log(images);
 
     // Return parsed data
     return { images };
