@@ -146,7 +146,7 @@ function init() {
 
 
     // Load point cloud
-    var ply_fileName = './points3D.ply';
+    var ply_fileName = './sparse/points3D.ply';
     const plyLoader = new PLYLoader(manager);
 
     plyLoader.load( ply_fileName, function ( geometry ) {
@@ -164,7 +164,7 @@ function init() {
     } );
 
     // Load COLMAP data
-    const colmap_fileName = './images.txt';
+    const colmap_fileName = './sparse/images.txt';
 
     const fileLoader = new THREE.FileLoader(manager);
     fileLoader.load( colmap_fileName, function ( fileContent ) {
